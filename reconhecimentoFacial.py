@@ -19,7 +19,7 @@ def detecta_face(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY);
 
     # Carrega o haarcascade
-    face_haarcascade = cv2.CascadeClassifier('opencv-files/lbpcascade_frontalface.xml');
+    face_haarcascade = cv2.CascadeClassifier('opencv/lbpcascade_frontalface.xml');
 
     # Detecta imagens multi escala, porque as imagens podem estar mais próximas e mais longes da camera
     faces = face_haarcascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=5);
